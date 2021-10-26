@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.print-area{
+    width: 80%;
+    margin: 20px auto;
+}
+.print-area .header{
+    width: 100%;
+    height: 150px;
+    background-color: rgb(4, 118, 170);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.header img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 70px;
+    border: 5px solid white;
+    box-shadow: 4px 4px 10px gray;
+    cursor: pointer;
+    transition: 5s;
+    user-select: none;
+    filter: grayscale(100%);
+}
+.header img:hover{
+    filter: grayscale(0%);
+    transform: scale(1.05);
+    box-shadow: 4px 4px 10px gray;
+}
+.header-texto{
+    color: white;
+    width: 60%;
+    margin-left: auto;
+}
+.header-texto h1{
+    font-size: 70px;
+    font-weight: normal;
+}
+.header-texto p{
+    font-size: 35px;
+    margin-left: 35%;
+    color: lightgray;
+}
+.infogeneral-area {
+    width: 100%;
+    height: 150px;
+    width: 70%;
+    margin-left: auto;
+}
+
+.tituloinfo{
+    font-size: 25px;
+    color: rgb(4, 118, 170);
+}
+.info{
+    line-height: 350%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-weight: bold;
+}
+.info1{
+    margin-left: 15px;
+}
+.info3{
+    margin-left: 15px;
+}
+
+
+.educacion-area {
+    height: 1px;
+    width: 80%;
+    margin: 20px auto;
+    background-color: gray;
+    
+    
+}
+.tituloedu{
+    margin-left: 15px;
+    font-size: 25px;
+    color: rgb(4, 118, 170);
+    line-height: 300%;
+}
+
+
+.edu{
+    line-height: 300%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 70%;
+    margin-left: auto; 
+}
+
+.fecha1 p{
+    color: gray;
+}
+.fecha2 {
+    color: gray;
+}
+
+.dato1 .carrera1{
+    font-weight: bold;
+}
+.dato2 .carrera2{
+    font-weight: bold;
+}
+
+.Conocimientos-area {
+    height: 1px;
+    width: 100%;
+    margin: 20px auto;
+    background-color: gray;
+}
+.titulocon{
+    font-size: 25px;
+    color: rgb(4, 118, 170);
+    line-height: 300%;
+    margin-left: 15px;
+}
+.know0{
+    width: 100%;
+    
+    width: 70%;
+    margin-left: auto;
+    font-weight: bold;
+}
+.know{
+    line-height: 300%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 70%;
+    margin-left: auto;
+    font-weight: bold;
+}
+
+.habilidades-area{
+    height: 1px;
+    width: 100%;
+    margin: 20px auto;
+    background-color: gray;
+}
+
+.titulohab{
+    font-size: 25px;
+    color: rgb(4, 118, 170);
+    line-height: 300%;
+    margin-left: 15px;
+}
+.bars{
+    line-height: 300%;
+    width: 70%;
+    margin-left: auto;
+    font-weight: bold;
+}
+
+.exp-area{
+    height: 1px;
+    width: 100%;
+    margin: 20px auto;
+    background-color: gray;
+}
+.tituloexp{
+    font-size: 25px;
+    color: rgb(4, 118, 170);
+    line-height: 300%;
+    margin-left: 15px;
+}
+.exp{
+    line-height: 300%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 70%;
+    margin-left: auto;
+}
+.date1 p{
+    color: gray;
+}
+.date2 p{
+    color: gray;
+}
+.date3 p{
+    color: gray;
+}
+.date4 p{
+    color: gray;
+}
+.exp1 p{
+    font-weight: bold;
+}
+.exp2 p{
+    font-weight: bold;
+}
+.exp3 p{
+    font-weight: bold;
+}
+.exp4 p{
+    font-weight: bold;
+}
+
+button{
+    font-size: 25px;
+    padding: 10px 20px;
+    margin: 50px 0 50px 140x;
+    background-color: gray;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0.5);
+    cursor: pointer;
+    transition: .5s;
+}
+button:hover{
+    background-color: black;
+    box-shadow: 0 0 20px rgb(0, 0, 0.5);
+}
+
+
+
