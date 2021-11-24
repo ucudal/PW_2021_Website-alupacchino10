@@ -4,6 +4,7 @@ btn.onclick = () =>{
 }
 
 let form = document.getElementById('container');
+
 let nombre = form.elements[0];
 let apellido = form.elements[1];
 let celular = form.elements[2];

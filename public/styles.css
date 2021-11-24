@@ -41,6 +41,7 @@
     visibility: hidden;
     opacity: 0;
 }
+
 @keyframes modal{
     100% {
         visibility: visible;
