@@ -4,15 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currículum vitae</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
- 
     
+    <link rel="stylesheet" href="styles.css">
+
 </head>
+
 <body>
+<input type="checkbox" id="cerrar"></input>
+<label for="cerrar" id="btn__cerrar">X</label>
+
+<section class="modal modal--show">
+    <div class="modal__container">
+        <img src="img1/modal1.jpg" class="modal__img">
+        <h2 class="modal__title">Bienvenidos a mi Currículum</h2>
+        <h2>Ingrese sus datos</h2>
+
+        <div class="container">
+            <form action="action_page.php">
+              <div class="row">
+                <div class="col-25">
+                  <label for="fname">Nombres</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="fname" name="firstname" placeholder="Tu nombre es..">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="lname">Apellidos</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="lname" name="lastname" placeholder="Apellido..">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="cel">Celular</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="cel" name="celular" placeholder="09X..">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="pais">País</label>
+                </div>
+                <div class="col-75">
+                  <select id="pais" name="pais">
+                    <option value="Argentina">Argentina</option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="Uruguay">Uruguay</option>
+                    <option value="Otro">Otro</option>
+                  </select>
+                </div>
+              </div>
+            </form>
+        </div>
+
+
+        <div class="botones">
+            <div class="botonGuardar">
+                <button class="btn__guardar">Guardar</button>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+
+
 <div class="print-area">
     <div class="header">
-        <img src="img/mifoto.jpg" alt="mi foto">
+        <img src="img1/mifoto1.jpg" alt="mi foto">
         <div class="header-texto">
             <h1>ALVARO LUPACCHINO</h1>
             <p>Developer</p>
@@ -143,13 +207,11 @@
             <p>Desarrollo en C# y JAVA para Atek logistica (COUSA)</p>
         </div>
     </div>
+    
 
- <button>Imprimir CV</button>
- <script>
-     var btn = document.querySelector("button");
-     btn.onclick = () =>{
-         window.print();
-     }
- </script>
+ <button class="btn__imprimir">Imprimir CV</button>
+ <script src="main.js"></script>
+
+ 
 </body>
 </html>
