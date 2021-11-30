@@ -13,7 +13,7 @@
 <input type="checkbox" id="cerrar"></input>
 <label for="cerrar" id="btn__cerrar">X</label>
 
-<section class="modal modal--show">
+<section class="modal modal--show" id="modal">
     <div class="modal__container">
         <img src="img1/modal1.jpg" class="modal__img">
         <h2 class="modal__title">Bienvenidos a mi Currículum</h2>
@@ -64,7 +64,7 @@
 
         <div class="botones">
             <div class="botonGuardar">
-                <button class="btn__guardar">Guardar</button>
+                <button class="btn__guardar" type="button" onclick="Submit();">Guardar</button>
             </div>
         </div>
     </div>
@@ -209,8 +209,16 @@
         </div>
     </div>
     
+    <ul class="horizontal-list">
+        <div class="horizontal-list__item">
+            <button class="btn__imprimir">Imprimir CV</button>
+        </div>
+        <div class="horizontal-list__item">
+            <button class="btn__masInfo">Mas info</button>
+        </div>
+    </ul>
 
- <button class="btn__imprimir">Imprimir CV</button>
+ 
  <script src="main.js"></script>
 
  

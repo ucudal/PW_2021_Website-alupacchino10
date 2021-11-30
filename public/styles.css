@@ -49,6 +49,8 @@
     }
 }
 
+
+
 input[type=text], select, textarea{
     width: 100%;
     padding: 12px;
@@ -370,6 +372,31 @@ input[type=text], select, textarea{
     font-weight: bold;
 }
 
+.horizontal-list {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+  }
+
+  .btn__masInfo{
+    font-size: 25px;
+    padding: 10px 20px;
+    margin: 50px 0 50px 140x;
+    background-color: gray;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0.5);
+    cursor: pointer;
+    transition: .5s;
+  }
+
+  .btn__masInfo:hover{
+    background-color: black;
+    box-shadow: 0 0 20px rgb(0, 0, 0.5);
+}
+
  .btn__imprimir{
     font-size: 25px;
     padding: 10px 20px;
@@ -387,6 +414,11 @@ input[type=text], select, textarea{
     background-color: black;
     box-shadow: 0 0 20px rgb(0, 0, 0.5);
 }
+
+.horizontal-list__item + .horizontal-list__item {
+    margin-left: 80%;
+  }
+
 
 
 
