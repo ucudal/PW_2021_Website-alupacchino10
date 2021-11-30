@@ -10,7 +10,7 @@ function generarExperiencias(listaExperiencias) {
         var fechaInicio = exp.fechaInicio, fechaFin = exp.fechaFin, empresa = exp.empresa, puesto = exp.puesto, descripcion = exp.descripcion;
         eHtml += "<div class=\"edu\">\n                                <div class=\"edu\">\n                                    <h5>".concat(fechaInicio, " - ").concat(fechaFin, "</h5>\n                                    <h5>").concat(empresa, "</h5>\n                                </div>\n                                <div class=\"text\">\n                                    <h4>").concat(puesto, "</h4>\n                                    <p>").concat(descripcion, "</p>\n                                </div>\n                            </div>");
     });
-    document.getElementById("experiencias").innerHTML = experienciasHtml;
+    document.getElementById("experiencias").innerHTML = eHtml;
 }
     
 function getExperienciaLaboral() {
@@ -19,7 +19,7 @@ function getExperienciaLaboral() {
         if (!res.ok) {
             throw Error("rechazo");
         }
-        return response.json();
+        return res.json();
     }).then
     (function (res) {
         generarExperiencias(res);
