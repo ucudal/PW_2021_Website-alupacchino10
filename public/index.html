@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currículum vitae</title>
@@ -13,7 +14,7 @@
 <input type="checkbox" id="cerrar"></input>
 <label for="cerrar" id="btn__cerrar">X</label>
 
-<section class="modal modal--show">
+<section class="modal modal--show" id="modal">
     <div class="modal__container">
         <img src="img1/modal1.jpg" class="modal__img">
         <h2 class="modal__title">Bienvenidos a mi Currículum</h2>
@@ -64,7 +65,7 @@
 
         <div class="botones">
             <div class="botonGuardar">
-                <button class="btn__guardar">Guardar</button>
+                <button class="btn__guardar" type="button" onclick="Submit();">Guardar</button>
             </div>
         </div>
     </div>
@@ -83,6 +84,7 @@
         </div>
     </div>
 </div>
+
 <div class="infogeneral-area">
     <div class="tituloinfo">
         <h2>INFORMACIÓN GENERAL</h2>
@@ -180,36 +182,28 @@
         <i class='bx bxs-hourglass-top'></i>
         <h2>EXPERIENCIA LABORAL</h2>
     </div>
+    <div id="experiencias"></div>
     
-    <div class="exp">
-        <div class="date1">
-            <p>2015-2021</p>
+    <ul class="horizontal-list">
+        <div class="horizontal-list__item">
+            <button class="btn__imprimir">Imprimir CV</button>
         </div>
-        <div class="exp1">
-            <p>brindé servicio informático variado a empresas</p>
+        <div class="horizontal-list__item">
+            <button class="btn__masInfo" onclick="getExperienciaLaboral();">Mas info</button>
         </div>
-        <div class="date2">
-            <p>2019</p>
-        </div>
-        <div class="exp2">
-            <p>Clases particulares de matemática a liceales</p>
-        </div>
-        <div class="date3">
-            <p>2019</p>
-        </div>
-        <div class="exp3">
-            <p>Voluntariado Ibirapitá</p>
-        </div>
-        <div class="date4">
-            <p>2021</p>
-        </div>
-        <div class="exp4">
-            <p>Desarrollo en C# y JAVA para Atek logistica (COUSA)</p>
-        </div>
-    </div>
-    
+    </ul>
 
- <button class="btn__imprimir">Imprimir CV</button>
+    <div id="myModal" class="modal2">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div id="experiencias2"></div>
+        </div>
+      
+      </div>
+
+ 
  <script src="main.js"></script>
 
  
